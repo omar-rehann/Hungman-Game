@@ -1,0 +1,310 @@
+body {
+    background-color: #ddd;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.game-continer {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.game-continer .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+}
+
+.game-continer .gamming {
+    width: 95%;
+    height: 100%;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.game-continer .gamming.wrong-1 .stand {
+    display: block;
+}
+
+.game-continer .gamminggamming.wrong-2 .stand::before {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 10px;
+    background-color: black;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+}
+
+.game-continer .gamminggamming.wrong-3 .stand::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 10px;
+    background-color: black;
+    left: 70%;
+    top: 0px;
+}
+
+.game-continer .gamming.wrong-4 .rop {
+    display: block;
+}
+
+.game-continer .gamming.gamming.wrong-5 .rop::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    top: 16px;
+    left: -11px;
+    border: dashed 3px black;
+}
+
+.game-continer .gamming.gamming.wrong-6 .rop::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 44px;
+    background-color: black;
+    top: 51px;
+    left: 3px;
+}
+
+.game-continer .gamming.wrong-7 .man {
+    display: block;
+}
+
+.game-continer .gamming.wrong-8 .hand {
+    display: block;
+    pointer-events: none;
+}
+
+.game-continer .gamming .stand {
+    position: relative;
+    background-color: black;
+    width: 10px;
+    height: 149px;
+    border-radius: 1px;
+    margin: 10px auto;
+    transition: 2s;
+    display: none;
+}
+
+.game-continer .gamming .stand::before {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 10px;
+    background-color: black;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+}
+
+.game-continer .gamming .stand::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 10px;
+    background-color: black;
+    left: 70%;
+    top: 0px;
+}
+
+.game-continer .gamming .rop {
+    position: relative;
+    background-color: black;
+    width: 10px;
+    height: 20px;
+    border-radius: 1px;
+    margin: 10px auto;
+    top: -150px;
+    left: 127px;
+    transition: 2s;
+    display: none;
+}
+
+.game-continer .gamming .rop::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    top: 16px;
+    left: -11px;
+    border: dashed 3px black;
+}
+
+.game-continer .gamming .rop::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 44px;
+    background-color: black;
+    top: 51px;
+    left: 3px;
+}
+
+.game-continer .gamming .man {
+    position: relative;
+    background-color: black;
+    width: 7px;
+    height: 30px;
+    border-radius: 1px;
+    margin: 10px auto;
+    top: -85px;
+    left: 128.8px;
+    transition: 2s;
+    display: none;
+}
+
+.game-continer .gamming .man::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    background-color: black;
+    width: 7px;
+    height: 36px;
+    top: 27px;
+    left: -9px;
+    transform: rotate(30deg);
+    border-radius: 3px;
+}
+
+.game-continer .gamming .man::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    background-color: black;
+    width: 7px;
+    height: 36px;
+    top: 27px;
+    left: 10px;
+    transform: rotate(-30deg);
+    border-radius: 3px;
+}
+
+.game-continer .gamming .hand {
+    position: relative;
+    background-color: black;
+    width: 7px;
+    height: 30px;
+    border-radius: 1px;
+    margin: 10px auto;
+    top: -155px;
+    left: 129px;
+    transition: 2s;
+    display: none;
+}
+
+.game-continer .gamming .hand::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    background-color: black;
+    width: 7px;
+    height: 36px;
+    top: -14px;
+    left: -9px;
+    transform: rotate(50deg);
+    border-radius: 3px;
+}
+
+.game-continer .gamming .hand::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    background-color: black;
+    width: 7px;
+    height: 36px;
+    top: -11px;
+    left: 15px;
+    transform: rotate(-50deg);
+    border-radius: 3px;
+}
+
+
+/* end gamming */
+
+.game-continer .allchar {
+    width: 95%;
+    height: 100%;
+    background-color: #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+.game-continer .allchar span.charachter {
+    background-color: green;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin: 10px 10px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.game-continer .allchar span.all-element {
+    pointer-events: none;
+}
+
+.game-continer .allchar span.cliked {
+    background-color: red;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin: 10px 10px;
+    flex-wrap: wrap;
+    pointer-events: none;
+}
+
+.game-continer .number_all_char {
+    width: 95%;
+    height: 100%;
+    background-color: #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.game-continer .number_all_char span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.game-continer .number_all_char span.update {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    padding: 10px;
+}
